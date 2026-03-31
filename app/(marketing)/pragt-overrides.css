@@ -1,0 +1,13 @@
+/* Arquivo reservado para overrides gravados pelo PRAGT CSS na landing page. */
+
+div.marketing-hero-card.relative {
+  padding: 0;
+}
+
+div.relative.mx-auto {
+  padding: 0;
+}
+
+section.relative.overflow-hidden {
+  margin: 0px 0px 0;
+}
