@@ -113,7 +113,7 @@ export default function MarketingPage() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(200,168,115,0.16),_transparent_26%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.06),_transparent_24%)]" />
 
         <div className="relative mx-auto flex max-w-7xl flex-col px-6 py-8 sm:px-8 lg:min-h-screen lg:px-10 lg:py-10 xl:px-14">
-          <div className="relative z-20 flex items-center justify-between border-b border-white/10 pb-5 pt-[1.3em]">
+          <div className="relative z-20 flex items-center justify-between border-b border-white/10">
             <a
               href="#top"
               className={cn(
