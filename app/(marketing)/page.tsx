@@ -160,7 +160,7 @@ export default function MarketingPage() {
 
               <div
                 data-hero-card
-                className="marketing-hero-card relative z-10 overflow-hidden px-6 sm:px-8"
+                className="marketing-hero-card relative z-10 overflow-hidden"
               >
                 <div className="hero-stagger relative z-10 space-y-8 lg:pr-[13rem] xl:pr-[14rem]">
                   <div className="hero-stagger space-y-5">
