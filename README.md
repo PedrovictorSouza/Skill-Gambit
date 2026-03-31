@@ -96,11 +96,8 @@ duolingo-clone/
     |-- auth.ts
     |-- demo-data.ts
     |-- demo-mode.ts
-    |-- pragt-config.ts
     |-- stripe.ts
     |-- utils.ts
-  |- packages/
-    |-- pragt-css/
   |- public/
   |- scripts/
     |-- prod.ts
