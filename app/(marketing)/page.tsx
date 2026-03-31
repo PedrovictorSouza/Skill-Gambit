@@ -146,7 +146,7 @@ export default function MarketingPage() {
 
           <div
             id="top"
-            className="relative isolate z-10 flex flex-1 items-center overflow-hidden py-12 lg:py-16"
+            className="relative isolate z-10 flex flex-1 items-center overflow-hidden"
           >
             <div className="relative w-full max-w-4xl overflow-hidden rounded-[32px]">
               <div
@@ -160,7 +160,7 @@ export default function MarketingPage() {
 
               <div
                 data-hero-card
-                className="marketing-hero-card relative z-10 overflow-hidden px-6 py-8 sm:px-8 lg:py-10"
+                className="marketing-hero-card relative z-10 overflow-hidden px-6 sm:px-8"
               >
                 <div className="hero-stagger relative z-10 space-y-8 lg:pr-[13rem] xl:pr-[14rem]">
                   <div className="hero-stagger space-y-5">
