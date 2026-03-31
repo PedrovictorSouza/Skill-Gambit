@@ -36,7 +36,7 @@
     "next": "^16.2.1",
     "openai": "^6.33.0",
     "pdf-parse": "^2.4.5",
-    "ra-data-simple-rest": "^5.14.4",
+    "ra-data-simple-rest": "^4.16.20",
     "react": "^19.2.4",
     "react-admin": "^4.16.20",
     "react-circular-progressbar": "^2.2.0",
