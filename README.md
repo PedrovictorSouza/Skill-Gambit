@@ -56,22 +56,26 @@ duolingo-clone/
     |-- (marketing)/
     |-- admin/
     |-- api/
+    |-- learn/
     |-- lesson/
     |-- apple-icon.png
-    |-- favicon.ico
     |-- globals.css
     |-- icon1.png
     |-- icon2.png
     |-- layout.tsx
   |- components/
     |-- modals/
+    |-- providers/
     |-- ui/
     |-- banner.tsx
     |-- feed-wrapper.tsx
+    |-- generate-path-form.tsx
+    |-- hero-fire-background.tsx
     |-- mobile-header.tsx
     |-- mobile-sidebar.tsx
     |-- promo.tsx
     |-- quests.tsx
+    |-- recent-study-paths.tsx
     |-- sidebar-item.tsx
     |-- sidebar.tsx
     |-- sticky-wrapper.tsx
@@ -82,10 +86,21 @@ duolingo-clone/
     |-- drizzle.ts
     |-- queries.ts
     |-- schema.ts
+  |- Images/
+    |-- Flag/
+    |-- UI/
   |- lib/
+    |-- imports/
+    |-- learn-path/
     |-- admin.ts
+    |-- auth.ts
+    |-- demo-data.ts
+    |-- demo-mode.ts
+    |-- pragt-config.ts
     |-- stripe.ts
     |-- utils.ts
+  |- packages/
+    |-- pragt-css/
   |- public/
   |- scripts/
     |-- prod.ts
@@ -93,6 +108,9 @@ duolingo-clone/
     |-- use-exit-modal.ts
     |-- use-hearts-modal.ts
     |-- use-practice-modal.ts
+    |-- use-preview-path-store.ts
+  |- tests/
+    |-- marketing-hero-card.regression.test.ts
   |- .env.example
   |- .env/.env.local
   |- .gitignore
@@ -104,6 +122,7 @@ duolingo-clone/
   |- environment.d.ts
   |- eslint.config.mjs
   |- next.config.ts
+  |- package-lock.json
   |- package.json
   |- postcss.config.js
   |- proxy.ts
@@ -237,6 +256,9 @@ Useful resources and dependencies that are used in Lingo.
 - Elevenlabs AI: https://elevenlabs.io/
 - Flagpack: https://flagpack.xyz/
 <!--- DEPENDENCIES_START --->
+- [@babel/generator](https://www.npmjs.com/package/@babel/generator): ^7.29.1
+- [@babel/parser](https://www.npmjs.com/package/@babel/parser): ^7.29.0
+- [@babel/traverse](https://www.npmjs.com/package/@babel/traverse): ^7.29.0
 - [@clerk/nextjs](https://www.npmjs.com/package/@clerk/nextjs): ^7.0.5
 - [@eslint/eslintrc](https://www.npmjs.com/package/@eslint/eslintrc): ^3
 - [@neondatabase/serverless](https://www.npmjs.com/package/@neondatabase/serverless): ^1.0.2
@@ -250,6 +272,7 @@ Useful resources and dependencies that are used in Lingo.
 - [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^19.2.3
 - [@vercel/config](https://www.npmjs.com/package/@vercel/config): ^0.0.40
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.27
+- [cheerio](https://www.npmjs.com/package/cheerio): ^1.2.0
 - [class-variance-authority](https://www.npmjs.com/package/class-variance-authority): ^0.7.1
 - [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
 - [dotenv](https://www.npmjs.com/package/dotenv): ^17.3.1
@@ -260,6 +283,8 @@ Useful resources and dependencies that are used in Lingo.
 - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier): ^10.1.8
 - [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.7.0
 - [next](https://www.npmjs.com/package/next): ^16.2.1
+- [openai](https://www.npmjs.com/package/openai): ^6.33.0
+- [pdf-parse](https://www.npmjs.com/package/pdf-parse): ^2.4.5
 - [pg](https://www.npmjs.com/package/pg): ^8.20.0
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [prettier](https://www.npmjs.com/package/prettier): ^3.8.1
@@ -278,6 +303,7 @@ Useful resources and dependencies that are used in Lingo.
 - [tailwindcss-animate](https://www.npmjs.com/package/tailwindcss-animate): ^1.0.7
 - [tsx](https://www.npmjs.com/package/tsx): ^4.21.0
 - [typescript](https://www.npmjs.com/package/typescript): ^6
+- [zod](https://www.npmjs.com/package/zod): ^4.3.6
 - [zustand](https://www.npmjs.com/package/zustand): ^5.0.12
 
 <!--- DEPENDENCIES_END --->
